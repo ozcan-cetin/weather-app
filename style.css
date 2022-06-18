@@ -1,0 +1,32 @@
+body{
+    background-color: pink;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+form span{
+    display: block;
+    /* margin-top: 2rem; */
+}
+
+.city{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    list-style-type: none;
+    list-style: none;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.card ul li{
+    list-style: none;
+}
+
+
+#country{
+    background-color: aqua;
+}
