@@ -3,6 +3,8 @@ const form = document.querySelector("section.first form");
 const input = document.querySelector(".first input");
 const msg = document.querySelector("span.msg");
 const list = document.querySelector(".cities");
+const eng = document.querySelector(".eng");
+const tur =document.querySelector(".tur");
 
 //! burada api key i şifreli olarak local storage gönderdim. Sonra da buradan kaldırdım. Api key kullanmam gerektiğinde şifreyi çözerek kullanacağım.
 
@@ -12,6 +14,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   getWeatherDataFromApi();
 });
+
 
 // function getWeatherDataFromApi(){}
 const getWeatherDataFromApi = async () => {
@@ -26,9 +29,11 @@ const getWeatherDataFromApi = async () => {
 
   let unitType = "metric";
 
-  let lang = "tr";
+  let lang = "tur";
 
-  let url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${tokenKey}&units=${unitType}`;
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${tokenKey}&units=${unitType}&lang=${lang}`;
+
+
 
   try {
     // const res = await fetch(url);
@@ -90,6 +95,8 @@ const getWeatherDataFromApi = async () => {
       msg.innerText = "";
     }, 5000);
   }
+
+
 
   form.reset();
 };
