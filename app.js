@@ -8,13 +8,17 @@ const tur =document.querySelector(".tur");
 
 //! burada api key i şifreli olarak local storage gönderdim. Sonra da buradan kaldırdım. Api key kullanmam gerektiğinde şifreyi çözerek kullanacağım.
 
+localStorage.setItem(
+  'apiKey',
+  EncryptStringAES('987d872359a65d49932717452a0c02a3')
+);
+
 //forma her submit yaptığımda sayfa yenilenmesin diye yani submit fonksiyonu benim istediğim şekilde davransın diye burada prevent default yaptım.
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   getWeatherDataFromApi();
 });
-
 
 // function getWeatherDataFromApi(){}
 const getWeatherDataFromApi = async () => {
