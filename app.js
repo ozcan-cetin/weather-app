@@ -101,6 +101,5 @@ const getWeatherDataFromApi = async () => {
   }
 
 
-
   form.reset();
 };
