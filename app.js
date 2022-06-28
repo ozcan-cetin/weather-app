@@ -29,7 +29,7 @@ const getWeatherDataFromApi = async () => {
 
   let unitType = "metric";
 
-  let lang = "tur";
+  let lang = "tr";
 
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${tokenKey}&units=${unitType}&lang=${lang}`;
 
@@ -78,7 +78,7 @@ const getWeatherDataFromApi = async () => {
     <li class="list-group-item name"><span>${name}</span><sup id="country">${
       sys.country
     }</sup></li>
-    <li class="list-group-item fs-2 temp">${Math.round(main.temp)}<sup>°C</sup></li>
+    <li class="list-group-item temp">${Math.round(main.temp)}<sup>°C</sup></li>
     <li class="list-group-item fs-2 logo"><img src="http://openweathermap.org/img/wn/${
       weather[0].icon
     }@2x.png" </img></li>

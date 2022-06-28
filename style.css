@@ -1,11 +1,16 @@
 body{
     background-color: pink;
 }
+
+header{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    color: white;
+}
 form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
+    text-align: center;
+    margin-top: 2rem;
 }
 
 button{
@@ -14,7 +19,7 @@ button{
 
 form span{
     display: block;
-    /* margin-top: 2rem; */
+    /* margin-top: 3rem; */
 }
 
 .city{
@@ -33,6 +38,22 @@ form span{
 .name{
     background-color: lightcyan;
     font-size: 1.5rem;
+    text-align: center;
+}
+
+.temp{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    background-color: aqua;
+}
+
+.logo{
+    text-align: center;
+}
+
+.situation{
+    text-align: center;
 }
 
 #country{
